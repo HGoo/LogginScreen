@@ -14,10 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var userNmaeTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    // MARK: - private properties
-
-    private var wrongLogData: [String?:String?] = [:]
-
+    
     // MARK: - IB Action
 
     @IBAction func forgotUsername() {
@@ -37,7 +34,6 @@ class ViewController: UIViewController {
             passwordTextField.text == "Password" {
             successfulLogin()
         } else {
-            wrongLogData[userNmaeTextField.text] = passwordTextField.text
             showAlert(title: "Invalid login or password",
                       message: "Please, enter correct login and password",
                       clearText: true)

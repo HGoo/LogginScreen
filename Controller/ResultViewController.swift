@@ -9,6 +9,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet var showUncorrectTryLable: UILabel!
+        
     override func viewDidLoad() {
         navigationItem.hidesBackButton = false
     }
