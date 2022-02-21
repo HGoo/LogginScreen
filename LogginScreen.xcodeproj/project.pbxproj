@@ -13,6 +13,8 @@
 		DD49C8A927C3BD2E0003BF71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD49C8A727C3BD2E0003BF71 /* Main.storyboard */; };
 		DD49C8AB27C3BD2F0003BF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD49C8AA27C3BD2F0003BF71 /* Assets.xcassets */; };
 		DD49C8AE27C3BD2F0003BF71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD49C8AC27C3BD2F0003BF71 /* LaunchScreen.storyboard */; };
+		DD49C8B927C3C04C0003BF71 /* ValidateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD49C8B827C3C04C0003BF71 /* ValidateData.swift */; };
+		DD54F2B327C3CB8E00A7EBA3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54F2B227C3CB8E00A7EBA3 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DD49C8AA27C3BD2F0003BF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD49C8AD27C3BD2F0003BF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD49C8AF27C3BD2F0003BF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD49C8B827C3C04C0003BF71 /* ValidateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateData.swift; sourceTree = "<group>"; };
+		DD54F2B227C3CB8E00A7EBA3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,11 @@
 		DD49C89527C3BD2E0003BF71 = {
 			isa = PBXGroup;
 			children = (
+				DD49C8B627C3BDA70003BF71 /* Supporting Files */,
 				DD49C8A027C3BD2E0003BF71 /* LogginScreen */,
+				DD49C8BA27C3C0500003BF71 /* Model */,
+				DD49C8B527C3BD860003BF71 /* View */,
+				DD49C8B727C3BFC80003BF71 /* Controller */,
 				DD49C89F27C3BD2E0003BF71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +64,45 @@
 		DD49C8A027C3BD2E0003BF71 /* LogginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				DD49C8A127C3BD2E0003BF71 /* AppDelegate.swift */,
-				DD49C8A327C3BD2E0003BF71 /* SceneDelegate.swift */,
-				DD49C8A527C3BD2E0003BF71 /* ViewController.swift */,
-				DD49C8A727C3BD2E0003BF71 /* Main.storyboard */,
-				DD49C8AA27C3BD2F0003BF71 /* Assets.xcassets */,
-				DD49C8AC27C3BD2F0003BF71 /* LaunchScreen.storyboard */,
 				DD49C8AF27C3BD2F0003BF71 /* Info.plist */,
+				DD49C8AA27C3BD2F0003BF71 /* Assets.xcassets */,
 			);
 			path = LogginScreen;
+			sourceTree = "<group>";
+		};
+		DD49C8B527C3BD860003BF71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD49C8AC27C3BD2F0003BF71 /* LaunchScreen.storyboard */,
+				DD49C8A727C3BD2E0003BF71 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD49C8B627C3BDA70003BF71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD49C8A127C3BD2E0003BF71 /* AppDelegate.swift */,
+				DD49C8A327C3BD2E0003BF71 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD49C8B727C3BFC80003BF71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD49C8A527C3BD2E0003BF71 /* ViewController.swift */,
+				DD54F2B227C3CB8E00A7EBA3 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD49C8BA27C3C0500003BF71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD49C8B827C3C04C0003BF71 /* ValidateData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD54F2B327C3CB8E00A7EBA3 /* ResultViewController.swift in Sources */,
 				DD49C8A627C3BD2E0003BF71 /* ViewController.swift in Sources */,
+				DD49C8B927C3C04C0003BF71 /* ValidateData.swift in Sources */,
 				DD49C8A227C3BD2E0003BF71 /* AppDelegate.swift in Sources */,
 				DD49C8A427C3BD2E0003BF71 /* SceneDelegate.swift in Sources */,
 			);
