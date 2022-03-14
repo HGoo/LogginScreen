@@ -84,6 +84,7 @@ extension LoginViewController: UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+        
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNmaeTextField {
@@ -92,7 +93,7 @@ extension LoginViewController: UITextFieldDelegate {
         } else {
             pressedLoginButton()
         }
-        
+
         return true
     }
 }
